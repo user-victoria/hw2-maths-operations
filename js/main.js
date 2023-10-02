@@ -10,7 +10,7 @@
 let num1 = +prompt('Write a number');
 let num2 = +prompt('Write one more number');
 
-if (!Number(num1) || !Number(num2)) {
+if (isNaN(num1) || isNaN(num2)) {
     alert('Please, write a number');
 }
 else {
